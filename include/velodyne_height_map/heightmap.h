@@ -1,8 +1,8 @@
 /* -*- mode: C++ -*- */
 /*  Copyright (C) 2010 UT-Austin & Austin Robot Technology,
  *  David Claridge, Michael Quinlan
- * 
- *  License: Modified BSD Software License 
+ *
+ *  License: Modified BSD Software License
  */
 
 
@@ -51,10 +51,11 @@ private:
   double m_per_cell_;
   double height_diff_threshold_;
   bool full_clouds_;
+  double clearance_height_;
 
   // Point clouds generated in processData
-  VPointCloud obstacle_cloud_;            
-  VPointCloud clear_cloud_;            
+  VPointCloud obstacle_cloud_;
+  VPointCloud clear_cloud_;
 
   // ROS topics
   ros::Subscriber velodyne_scan_;
